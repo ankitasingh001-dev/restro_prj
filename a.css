@@ -1,0 +1,210 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Robot', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: rgb(241, 186, 147);
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    border-radius: 20px;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-inline: 22px;
+}
+
+.icons{
+    display: flex;
+    gap: 22px ;
+}
+.icons i{
+    font-size:25px;
+    margin-inline: 22px;
+    margin-top: 10px;
+}
+#bar{
+    display: none;
+    font-size: 25px;
+}
+.logo{
+    font-size: 26px;
+
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 140px;
+
+}
+.maintext{
+    margin-top: 44px;
+}
+.mainText p{ 
+    margin-top: 22px;
+}
+.maintext button{
+    margin-top: 22px;
+    width: 140px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.maintext h1{
+    font-size: 65px;
+
+}
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card p{
+    margin-top: 11px;
+
+}
+.cards img{
+    width: 100%;
+    height: 250px;
+}
+.head{
+    text-align: center;
+    padding: 88px;
+}
+.card{
+    margin-inline: 55px;
+    margin-top: 22px;
+    width: 300px;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 300px;
+    height: 250px;
+    margin-inline: 20px;
+    margin-top: 22px;
+}
+.blogs{
+    display: flex;
+    justify-content: center;
+
+}
+.blogs .blogcard{
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(78, 73, 73);
+    color: white;
+    display: flex;
+    gap: 22px;
+    margin-inline: 22px;
+    margin-top: 11px;
+}
+.blogcard p{
+    margin-top: 17px;
+
+}
+.blogtext a{
+    padding: 5px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    /* top: 25px; */
+    /* margin-top: 40px; */
+    /* position: relative; */
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+    padding: 66px;
+    background-color:rgb(71, 35, 10);
+    color: white;
+}
+.text p{
+    margin-top: 10px;
+}
+.navLoad{
+
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    border-radius: 6px;
+    background-color:rgba(238, 235, 235, 0.644);
+    margin-top: 11px;
+
+}
+.mainload{
+     width: 90%;
+    height: 270px;
+    margin: auto;
+    border-radius: 6px;
+    background-color:rgb(238, 235, 235);
+    margin-top: 51px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+
+}
+.cards .cardloads{
+    width: 300px;
+    height: 300px;
+    margin-inline: 22px;
+    border-radius: 2px;
+    background-color:rgb(238, 235, 235);
+    margin-top: 41px;
+
+}
+
+ let loading = document.querySelector(".loading");
+ let container = document.querySelector(".container");
+ let card = document.querySelectorAll('.cards');
+
+
+
+
+ card.forEach(function(cards){
+    cards.addEventListener("click",function(){
+        console.log(cards);
+
+    }) 
+ })
+
+
+
+
+
+
+container.style.display="none";
+loading.style.display="block";
+
+
+setTimeout(function(){
+    container.style.display="block";
+    loading.style.display="none";
+
+}, 1000)
